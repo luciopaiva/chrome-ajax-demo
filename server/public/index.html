@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Website to be hacked</title>
+</head>
+<body>
+
+<div id="container"></div>
+
+<script type="text/javascript">
+
+    window.hackMe = function (param) {
+        document.getElementById('container').innerHTML = param;
+        return param;
+    };
+
+    (function () {
+        var count = 0;
+
+        setInterval(function () {
+            console.info('hackMe returned ' + window.hackMe(count++));
+        }, 1000);
+
+        window.hackMe(count++);
+    })();
+
+</script>
+
+</body>
+</html>

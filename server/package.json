@@ -1,0 +1,14 @@
+{
+  "name": "chromescript-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucio Paiva <lucio@luciopaiva.com> (http://github.com/luciopaiva)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}
