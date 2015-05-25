@@ -3,7 +3,7 @@
   "name": "AJAX Demo",
   "version": "0.1.0",
   "content_scripts": [{
-    "matches": ["*://*/*"],
+    "matches": ["*://localhost:*/*"],
     "js": ["jquery.min.js", "inject.js", "index.js"]
   }],
   "web_accessible_resources": ["jquery.min.js", "inject.js"]
