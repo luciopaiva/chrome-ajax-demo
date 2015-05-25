@@ -1,10 +1,3 @@
-// ==UserScript==
-// @name           AJAX Demo
-// @description    Demonstrates how to make an AJAX request from within an extension.
-// @include        http://*.*
-// @include        https://*.*
-// @version        0.1.0
-// ==/UserScript==
 
 $(function () {
 
