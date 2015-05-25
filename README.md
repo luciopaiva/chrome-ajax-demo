@@ -19,3 +19,18 @@ As a note, I thought that the following configuration was needed in the `manifes
 
 It turns out it is not needed and the demo works fine without it. I guess that's because the AJAX request is 
 happening from inside the page's context and not from the extension itself, but I have yet to confirm that is true. 
+
+# How to Run
+
+Clone this repo. Go to `server/` and run:
+
+    npm install
+    node server
+
+And the server should be online.
+
+The next step is to go to [chrome://extensions](chrome://extensions) and drag the `extension` folder over it to
+install the extension.
+
+Finally, point Chrome to [the server](http://localhost:8888/) to load the sample page and then open the console to
+see the script in action. Also look at the server output to confirm that the AJAX requests are successful.
